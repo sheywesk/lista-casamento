@@ -1,0 +1,26 @@
+/* Header.css */
+.header {
+    width: 100%; /* Garante que o header use a largura total disponível */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a área do header */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    position: relative; /* Garante que a imagem do header esteja posicionada corretamente */
+}
+
+.header-image {
+    width: 100%; /* Ajusta a largura da imagem ao tamanho do header */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem cubra toda a área do header sem distorção */
+    display: block; /* Remove qualquer espaço extra abaixo da imagem */
+}
+
+.header-text {
+    position: absolute; /* Permite que o texto seja posicionado sobre a imagem */
+    top: 50%; /* Posiciona o texto verticalmente no meio */
+    left: 50%; /* Posiciona o texto horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Ajusta o texto para o centro exato */
+    font-family: 'Powerpoint',cursive; /* Aplica a fonte desejada */
+    color: #fff; /* Cor do texto, ajuste conforme necessário */
+    font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra para efeito de profundidade */
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+}

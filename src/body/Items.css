@@ -1,0 +1,72 @@
+/* Items.css */
+.custom-card {
+    background-color: #FFFFFF; /* Branco */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra 3D */
+    overflow: hidden; /* Garante que a sombra não ultrapasse os limites do card */
+    text-align: center; /* Centraliza o texto dentro do card */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para hover */
+    margin: 10px; /* Adiciona margem ao redor dos cards */
+    max-width: 100%; /* Garante que o card não exceda a largura do container */
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Intensifica a sombra ao passar o mouse */
+}
+
+.card-image {
+    width: 100%; /* Ajusta a largura da imagem ao tamanho do card */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.card-description {
+    margin: 15px 0; /* Adiciona margem acima e abaixo da descrição */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.card-value {
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: #C04F4F; /* Marsala */
+    margin: 10px 0; /* Adiciona margem acima e abaixo do valor */
+}
+
+.custom-button {
+    background-color: #C04F4F; /* Marsala */
+    border: none;
+    color: white;
+    padding: 12px 24px; /* Aumenta o padding para botões maiores */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    margin: 8px 4px; /* Ajusta a margem */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px; /* Arredonda as bordas do botão */
+}
+
+.custom-button:hover {
+    background-color: white;
+    color: #C04F4F;
+    border: 2px solid #C04F4F;
+}
+
+@media (max-width: 768px) {
+    .custom-button {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+        padding: 10px 20px; /* Ajusta o padding */
+    }
+
+    .card-image {
+        max-width: 100%; /* Garante que a imagem não exceda a largura do card */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
