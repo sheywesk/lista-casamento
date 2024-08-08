@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FaPlay, FaPause } from 'react-icons/fa';
 import './MusicPlayer.css';
-import praVoce from "../assets/music/marcelo_jeneci.mp3"
+import praVoce from "../assets/music/musica_bridgerton.mp3"
 
 const MusicPlayer = () => {
     const audioRef = useRef(null);
