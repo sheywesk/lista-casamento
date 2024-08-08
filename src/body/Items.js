@@ -52,7 +52,7 @@ const Items = () => {
                             <div className="card-description">{item.description}</div>
                             <div className="card-value">{item.value}</div>
                             <button className="custom-button" onClick={() => handleButtonClick(item)}>
-                                Faz o pix, bença !
+                                Presentear
                             </button>
                         </div>
                     </Col>

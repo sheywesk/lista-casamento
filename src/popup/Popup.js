@@ -24,7 +24,7 @@ const Popup = ({ show, handleClose, item }) => {
                 <h2>{item.name}</h2>
                 <img src={qrImage} alt="QR Code" className="qr-image" />
                 <div className="text-center mt-4">
-                    <Button variant="primary" onClick={handleCopy} className="custom-button">Copiar QR Code</Button>
+                    <Button variant="primary" onClick={handleCopy} className="custom-button">Pix copia e cola - Clique aqui</Button>
                 </div>
                 <Button variant="secondary" onClick={handleClose} className="mt-4 custom-button">Fechar</Button>
             </div>
